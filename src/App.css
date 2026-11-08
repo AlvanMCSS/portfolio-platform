@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f1f4f9;
+  color: #202b3c;
+}
+
+#root {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #202b50, #465c9c);
+  color: white;
+  padding: 35px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+header p {
+  margin-bottom: 0;
+  color: #e0e6ff;
+}
+
+/* Search bar */
+#root > div:first-of-type {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  border: 1px solid #ccd3e0;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  color: #202b3c;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #6079c5;
+}
+
+/* Project form */
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+form h2 {
+  margin-top: 0;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: #465c9c;
+  color: white;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #202b50;
+}
+
+/* Project list */
+#root > div:last-of-type {
+  margin-top: 30px;
+}
+
+#root > div:last-of-type > div {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border-left: 5px solid #6079c5;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+#root > div:last-of-type > div h3 {
+  margin-top: 0;
+  color: #354d91;
+}
+
+#root > div:last-of-type > div p {
+  line-height: 1.6;
+}
+
+/* Phone screens */
+@media (max-width: 600px) {
+  #root {
+    padding: 15px;
+  }
+
+  header {
+    padding: 25px 20px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  form {
+    padding: 18px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
