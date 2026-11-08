@@ -5,7 +5,7 @@ function SearchBar({ searchTerm, setSearchTerm }) {
             type="text"
             placeholder="Search for projects..."
             value={searchTerm}
-            oneChange={(event) => setSearchTerm(event.target.value)}
+            onChange={(event) => setSearchTerm(event.target.value)}
             />
         </div>
     )
